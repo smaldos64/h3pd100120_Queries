@@ -7,6 +7,8 @@ namespace Queries.Core
     {
         ICourseRepository Courses { get; }
         IAuthorRepository Authors { get; }
+
+        IMovieRepository Movies { get; }
         int Complete();
     }
 }

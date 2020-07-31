@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 using Queries.Core.Domain;
 using Queries.Persistence;
+using Queries.Extensions;
+
 
 namespace Queries.Video3
 {

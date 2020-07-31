@@ -13,10 +13,13 @@ namespace Queries.Persistence
             _context = context;
             Courses = new CourseRepository(_context);
             Authors = new AuthorRepository(_context);
+            Movies = new MovieRepository(_context);
         }
 
         public ICourseRepository Courses { get; private set; }
         public IAuthorRepository Authors { get; private set; }
+
+        public IMovieRepository Movies { get; private set; }
 
         public int Complete()
         {

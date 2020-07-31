@@ -1,7 +1,14 @@
-﻿#define Video3_The_Power_Of_IEnumerable
-#define Video3_Creating_An_Extension_Method
-#define Video3_Understanding_Lambda_Expression
-#define Video_3_Using_Func_And_Action_Types
+﻿//#define Video3_The_Power_Of_IEnumerable
+//#define Video3_Creating_An_Extension_Method
+//#define Video3_Understanding_Lambda_Expression
+//#define Video_3_Using_Func_And_Action_Types
+//#define Video3_Query_Syntax_Versus_Method_Syntax
+
+//#define Video4_Creating_A_Custom_Filter_Operation
+//#define Video4_Taking_Advantage_Of_Deferred_Execution
+//#define Video4_Avoiding_Pittfalls_Of_Deferred_Execution
+//#define Video4_Exceptions_And_Deferred_Queries
+#define Video4_All_About_Streaming_Operators
 
 using Queries.Core.Domain;
 using Queries.Persistence;
@@ -11,6 +18,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Queries.Video3;
+using Queries.Video4;
 
 namespace Queries
 {
@@ -35,10 +43,32 @@ namespace Queries
 #endif
 
 #if Video_3_Using_Func_And_Action_Types
-            Video_3_Using_Func_And_Action_Types.Video_3_Using_Func_And_Action_Types_Start();
+            Video3_Using_Func_And_Action_Types.Video_3_Using_Func_And_Action_Types_Start();
 #endif
 
+#if (Video3_Query_Syntax_Versus_Method_Syntax)
+            Video3_Query_Syntax_Versus_Method_Syntax.Video3_Query_Syntax_Versus_Method_Syntax_Start();
+#endif
 
+#if (Video4_Creating_A_Custom_Filter_Operation)
+            Video4_Creating_A_Custom_Filter_Operation.Video4_Creating_A_Custom_Filter_Operation_start();
+#endif
+
+#if (Video4_Taking_Advantage_Of_Deferred_Execution)
+            Video4_Taking_Advantage_Of_Deferred_Execution.Video4_Taking_Advantage_Of_Deferred_Execution_Start();
+#endif
+
+#if (Video4_Avoiding_Pittfalls_Of_Deferred_Execution)
+            Video4_Avoiding_Pittfalls_Of_Deferred_Execution.Video4_Avoiding_Pittfalls_Of_Deferred_Execution_Start();
+#endif
+
+#if (Video4_Exceptions_And_Deferred_Queries)
+            Video4_Exceptions_And_Deferred_Queries.Video4_Exceptions_And_Deferred_Queries_Start();
+#endif
+
+#if (Video4_All_About_Streaming_Operators)
+            Video4_All_About_Streaming_Operators.Video4_All_About_Streaming_Operators_Start();
+#endif
             using (var unitOfWork = new UnitOfWork(new PlutoContext()))
             {
                 // Example1

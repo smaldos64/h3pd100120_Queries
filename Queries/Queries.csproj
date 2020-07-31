@@ -51,7 +51,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core\Domain\Author.cs" />
-    <Compile Include="MyLinq.cs" />
+    <Compile Include="Core\Domain\Movie.cs" />
+    <Compile Include="Core\Repositories\IMovieRepository.cs" />
+    <Compile Include="Extensions\MyLinq.cs" />
+    <Compile Include="Persistence\Repositories\MovieRepository.cs" />
     <Compile Include="Video3\NotUsingLinq.cs" />
     <Compile Include="Persistence\Repositories\AuthorRepository.cs" />
     <Compile Include="Core\Domain\Course.cs" />
@@ -79,9 +82,15 @@
     <Compile Include="ThirdExecution.cs" />
     <Compile Include="Video3\UsingLinq.cs" />
     <Compile Include="Video3\Video3_Creating_An_Extension_Method.cs" />
+    <Compile Include="Video3\Video3_Query_Syntax_Versus_Method_Syntax.cs" />
     <Compile Include="Video3\Video3_The_Power_Of_IEnumerable.cs" />
     <Compile Include="Video3\Video3_Understanding_Lambda_Expression.cs" />
-    <Compile Include="Video3\Video_3_Using_Func_And_Action_Types.cs" />
+    <Compile Include="Video3\Video3_Using_Func_And_Action_Types.cs" />
+    <Compile Include="Video4\Video4_All_About_Streaming_Operators.cs" />
+    <Compile Include="Video4\Video4_Avoiding_Pittfalls_Of_Deferred_Execution.cs" />
+    <Compile Include="Video4\Video4_Creating_A_Custom_Filter_Operation.cs" />
+    <Compile Include="Video4\Video4_Exceptions_And_Deferred_Queries.cs" />
+    <Compile Include="Video4\Video4_Taking_Advantage_Of_Deferred_Execution.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -92,6 +101,7 @@
       <DependentUpon>201510010029257_InitialMigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

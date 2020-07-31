@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using Queries.Extensions;
+
 namespace Queries.Video3
 {
     public class Video3_Creating_An_Extension_Method

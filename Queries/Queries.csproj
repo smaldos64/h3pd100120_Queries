@@ -75,7 +75,7 @@
     <Compile Include="Persistence\Repositories\Repository.cs" />
     <Compile Include="Core\Domain\Tag.cs" />
     <Compile Include="Persistence\UnitOfWork.cs" />
-    <Compile Include="StringExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="ThirdExecution.cs" />
     <Compile Include="Video3\UsingLinq.cs" />
     <Compile Include="Video3\Video3_Creating_An_Extension_Method.cs" />

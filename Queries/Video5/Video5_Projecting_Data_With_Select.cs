@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Queries.Extensions;
+using Queries.Files;
 
 namespace Queries.Video5
 {
@@ -19,7 +20,7 @@ namespace Queries.Video5
             Console.WriteLine("----------------------------------");
             Console.WriteLine("");
 
-            var cars = ProcessFile("fuel.csv");
+            var cars = ProcessDataFromFiles.ProcessCar("fuel.csv");
 
             Console.WriteLine("Method Syntax");
             Console.WriteLine("");
@@ -86,23 +87,23 @@ namespace Queries.Video5
 
         }
 
-        private static List<Car> ProcessFile(string path)
-        {
-            // File.ReadALlLines returner et Array af strenge. Så da vi arbejder på en IEnumerable, kan vi 
-            // anvende LINQ og alle de extensions metoder, som LINQ er i besiddelse af. I tilfældet her er 
-            // der tale om en IENumerable af strenge.
+        //private static List<Car> ProcessFile(string path)
+        //{
+        //    // File.ReadALlLines returner et Array af strenge. Så da vi arbejder på en IEnumerable, kan vi 
+        //    // anvende LINQ og alle de extensions metoder, som LINQ er i besiddelse af. I tilfældet her er 
+        //    // der tale om en IENumerable af strenge.
 
-            // Projektioner kan være meget effektive, når man ønsker at konverer en sekvens af
-            // objekter af en type til en sekvens af objekter af en anden type.
-            // Projektioner kan også være effektive, når man ønsker et subset af data.
+        //    // Projektioner kan være meget effektive, når man ønsker at konverer en sekvens af
+        //    // objekter af en type til en sekvens af objekter af en anden type.
+        //    // Projektioner kan også være effektive, når man ønsker et subset af data.
 
-            var queryMethodSyntax = 
-                File.ReadAllLines(path)
-                    .Skip(1)      // Tag ikke første linje => overskriftslinje med
-                    .Where(line => line.Length > 1) // Tag ikke sidste linje => tom linje med
-                    .ToCar();
+        //    var queryMethodSyntax = 
+        //        File.ReadAllLines(path)
+        //            .Skip(1)      // Tag ikke første linje => overskriftslinje med
+        //            .Where(line => line.Length > 1) // Tag ikke sidste linje => tom linje med
+        //            .ToCar();
 
-            return (queryMethodSyntax.ToList());
-        }
+        //    return (queryMethodSyntax.ToList());
+        //}
     }
 }

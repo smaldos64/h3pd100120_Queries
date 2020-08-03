@@ -6,6 +6,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using Queries.Files;
+
 namespace Queries.Extensions
 {
     public static class StringExtensions
@@ -20,7 +22,7 @@ namespace Queries.Extensions
 
         public static List<Car> ProcessFileStatic(this string path)
         {
-            // Fle.ReadALlLines returner et Array af strenge. Så da vi arbejder på en IEnumerable, kan vi 
+            // File.ReadALlLines returner et Array af strenge. Så da vi arbejder på en IEnumerable, kan vi 
             // anvende LINQ og alle de extensions metoder, som LINQ er i besiddelse af. I tilfældet her er 
             // der tale om en IENumerable af strenge.
             return
@@ -67,6 +69,21 @@ namespace Queries.Extensions
                     City = int.Parse(columns[5]),
                     Highway = int.Parse(columns[6]),
                     Combined = int.Parse(columns[7])
+                };
+            }
+        }
+
+        public static IEnumerable<Manufacturer> ToManufacturer(this IEnumerable<string> source)
+        {
+            foreach (var line in source)
+            {
+                var columns = line.Split(',');
+
+                yield return new Manufacturer
+                {
+                    Name = columns[0],
+                    Headquarters = columns[1],
+                    Year = int.Parse(columns[2])
                 };
             }
         }

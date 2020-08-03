@@ -15,7 +15,11 @@
 //#define Video5_Finding_The_Most_Fuel_Efficient_Car
 //#define Video5_Filtering_With_Where_And_First
 //#define Video5_Quantifying_Data_With_Any_All
-#define Video5_Projecting_Data_With_Select
+//#define Video5_Projecting_Data_With_Select
+//#define Video5_Flattering_Data_With_SelectMany
+
+#define Video6_Joining_Data_With_Query_Syntax
+#define Video6_Joining_Data_With_Extension_Method_Syntax
 
 using Queries.Core.Domain;
 using Queries.Persistence;
@@ -27,6 +31,7 @@ using System.Linq;
 using Queries.Video3;
 using Queries.Video4;
 using Queries.Video5;
+using Queries.Video6;
 
 namespace Queries
 {
@@ -100,6 +105,19 @@ namespace Queries
 
 #if (Video5_Projecting_Data_With_Select)
             Video5_Projecting_Data_With_Select.Video5_Projecting_Data_With_Select_Start();
+#endif
+
+#if (Video5_Flattering_Data_With_SelectMany)
+            Video5_Flattering_Data_With_SelectMany.Video5_Flattering_Data_With_SelectMany_Start();
+#endif
+
+
+#if (Video6_Joining_Data_With_Query_Syntax)
+            Video6_Joining_Data_With_Query_Syntax.Video6_Joining_Data_With_Query_Syntax_Start();
+#endif
+
+#if (Video6_Joining_Data_With_Extension_Method_Syntax)
+            Video6_Joining_Data_With_Extension_Method_Syntax.Video6_Joining_Data_With_Extension_Method_Syntax_Start();
 #endif
             using (var unitOfWork = new UnitOfWork(new PlutoContext()))
             {

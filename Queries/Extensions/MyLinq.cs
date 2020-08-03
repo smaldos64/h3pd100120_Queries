@@ -88,7 +88,17 @@ namespace Queries.Extensions
 
             // Brugen af yield bevirker, at vi nu udfører tingene ved brug af Third Execution 
             // (deferred execution)
-            // Ikke alle LINQ operationer understøtter THird Execution !!!
+            // Ikke alle LINQ operationer understøtter Third Execution !!!
+        }
+
+        public static IEnumerable<double> Random()
+        {
+            var random = new Random();
+
+            while (true)
+            {
+                yield return random.NextDouble();
+            }
         }
     }
 }

@@ -8,7 +8,14 @@
 //#define Video4_Taking_Advantage_Of_Deferred_Execution
 //#define Video4_Avoiding_Pittfalls_Of_Deferred_Execution
 //#define Video4_Exceptions_And_Deferred_Queries
-#define Video4_All_About_Streaming_Operators
+//#define Video4_All_About_Streaming_Operators
+//#define Video4_Querying_Infinity
+
+//#define Video5_Implementing_A_File_Processor
+//#define Video5_Finding_The_Most_Fuel_Efficient_Car
+//#define Video5_Filtering_With_Where_And_First
+//#define Video5_Quantifying_Data_With_Any_All
+#define Video5_Projecting_Data_With_Select
 
 using Queries.Core.Domain;
 using Queries.Persistence;
@@ -19,6 +26,7 @@ using System.Linq;
 
 using Queries.Video3;
 using Queries.Video4;
+using Queries.Video5;
 
 namespace Queries
 {
@@ -68,6 +76,30 @@ namespace Queries
 
 #if (Video4_All_About_Streaming_Operators)
             Video4_All_About_Streaming_Operators.Video4_All_About_Streaming_Operators_Start();
+#endif
+
+#if (Video4_Querying_Infinity)
+            Video4_Querying_Infinity.Video4_Querying_Infinity_Start();
+#endif
+
+#if (Video5_Implementing_A_File_Processor)
+            Video5_Implementing_A_File_Processor.Video5_Implementing_A_File_Processor_Start();
+#endif
+
+#if (Video5_Finding_The_Most_Fuel_Efficient_Car)
+            Video5_Finding_The_Most_Fuel_Efficient_Car.Video5_Finding_The_Most_Fuel_Efficient_Car_Start();
+#endif
+
+#if (Video5_Filtering_With_Where_And_First)
+            Video5_Filtering_With_Where_And_First.Video5_Filtering_With_Where_And_First_Start();
+#endif
+
+#if (Video5_Quantifying_Data_With_Any_All)
+            Video5_Quantifying_Data_With_Any_All_Contains.Video5_Quantifying_Data_With_Any_All_Contains_Start();
+#endif
+
+#if (Video5_Projecting_Data_With_Select)
+            Video5_Projecting_Data_With_Select.Video5_Projecting_Data_With_Select_Start();
 #endif
             using (var unitOfWork = new UnitOfWork(new PlutoContext()))
             {

@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core\Domain\Author.cs" />
+    <Compile Include="Core\Domain\Car.cs" />
     <Compile Include="Core\Domain\Movie.cs" />
     <Compile Include="Core\Repositories\IMovieRepository.cs" />
     <Compile Include="Extensions\MyLinq.cs" />
@@ -90,10 +91,20 @@
     <Compile Include="Video4\Video4_Avoiding_Pittfalls_Of_Deferred_Execution.cs" />
     <Compile Include="Video4\Video4_Creating_A_Custom_Filter_Operation.cs" />
     <Compile Include="Video4\Video4_Exceptions_And_Deferred_Queries.cs" />
+    <Compile Include="Video4\Video4_Querying_Infinity.cs" />
     <Compile Include="Video4\Video4_Taking_Advantage_Of_Deferred_Execution.cs" />
+    <Compile Include="Video5\Video5_Flattering_Data_With_SelectMany.cs" />
+    <Compile Include="Video5\Video5_Projecting_Data_With_Select.cs" />
+    <Compile Include="Video5\Video5_Filtering_With_Where_And_First.cs" />
+    <Compile Include="Video5\Video5_Finding_The_Most_Fuel_Efficient_Car.cs" />
+    <Compile Include="Video5\Video5_Implementing_A_File_Processor.cs" />
+    <Compile Include="Video5\Video5_Quantifying_Data_With_Any_All_Contains.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="fuel.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

@@ -58,7 +58,7 @@ namespace Queries.Video4
 
             Console.WriteLine("");
 
-            // Ikke så effektiv som den forrige LINQ Query da vi her sorterer først og derefter filtrerer.
+            // Ikke så effektiv som den forrige LINQ Query, da vi her sorterer først og derefter filtrerer.
             var queryMethodSyntaxDeferredExecutionOrderReversed = MoviesList.OrderByDescending(m => m.Rating).FilterYield(m => m.Year > 2000);
             
             var enumeratorOrderReversed = queryMethodSyntaxDeferredExecutionOrderReversed.GetEnumerator();
@@ -68,6 +68,8 @@ namespace Queries.Video4
             }
 
             Console.WriteLine("");
+
+            // Query Syntax herunder
 
             var queryQuerySyntaxDeferredExecutionOrder = from movie in MoviesList
                                                          where movie.Year > 2000

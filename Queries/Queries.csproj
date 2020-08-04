@@ -101,8 +101,13 @@
     <Compile Include="Video5\Video5_Finding_The_Most_Fuel_Efficient_Car.cs" />
     <Compile Include="Video5\Video5_Implementing_A_File_Processor.cs" />
     <Compile Include="Video5\Video5_Quantifying_Data_With_Any_All_Contains.cs" />
+    <Compile Include="Video6\Video6_Aggreating_Data.cs" />
+    <Compile Include="Video6\Video6_Challenge_Answer_Group_By_Country.cs" />
+    <Compile Include="Video6\Video6_Grouping_Data.cs" />
+    <Compile Include="Video6\Video6_Creating_A_Join_With_A_Composition.cs" />
     <Compile Include="Video6\Video6_Joining_Data_With_Extension_Method_Syntax.cs" />
     <Compile Include="Video6\Video6_Joining_Data_With_Query_Syntax.cs" />
+    <Compile Include="Video6\Video6_Using_A_GroupJoin_For_Hierarchy.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

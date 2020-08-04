@@ -18,8 +18,13 @@
 //#define Video5_Projecting_Data_With_Select
 //#define Video5_Flattering_Data_With_SelectMany
 
-#define Video6_Joining_Data_With_Query_Syntax
-#define Video6_Joining_Data_With_Extension_Method_Syntax
+//#define Video6_Joining_Data_With_Query_Syntax
+//#define Video6_Joining_Data_With_Extension_Method_Syntax
+//#define Video6_Creating_A_Join_With_A_Composition
+//#define Video6_Grouping_Data
+//#define Video6_Using_A_GroupJoin_For_Hierarchy
+//#define Video6_Challenge_Answer_Group_By_Country
+#define Video6_Aggreating_Data
 
 using Queries.Core.Domain;
 using Queries.Persistence;
@@ -118,6 +123,26 @@ namespace Queries
 
 #if (Video6_Joining_Data_With_Extension_Method_Syntax)
             Video6_Joining_Data_With_Extension_Method_Syntax.Video6_Joining_Data_With_Extension_Method_Syntax_Start();
+#endif
+
+#if (Video6_Creating_A_Join_With_A_Composition)
+            Video6_Creating_A_Join_With_A_Composition.Video6_Creating_A_Join_With_A_Composition_Start();
+#endif
+
+#if (Video6_Grouping_Data)
+            Video6_Grouping_Data.Video6_Grouping_Data_Start();
+#endif
+
+#if (Video6_Using_A_GroupJoin_For_Hierarchy)
+            Video6_Using_A_GroupJoin_For_Hierarchy.Video6_Using_A_GroupJoin_For_Hierarchy_Start();
+#endif
+
+#if (Video6_Challenge_Answer_Group_By_Country)
+            Video6_Challenge_Answer_Group_By_Country.Video6_Challenge_Answer_Group_By_Country_start();
+#endif
+
+#if (Video6_Aggreating_Data)
+            Video6_Aggreating_Data.Video6_Aggreating_Data_Start();
 #endif
             using (var unitOfWork = new UnitOfWork(new PlutoContext()))
             {

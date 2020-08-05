@@ -24,7 +24,8 @@
 //#define Video6_Grouping_Data
 //#define Video6_Using_A_GroupJoin_For_Hierarchy
 //#define Video6_Challenge_Answer_Group_By_Country
-#define Video6_Aggreating_Data
+//#define Video6_Aggreating_Data
+#define Video6_Aggregation_With_Extended_Method
 
 using Queries.Core.Domain;
 using Queries.Persistence;
@@ -143,6 +144,10 @@ namespace Queries
 
 #if (Video6_Aggreating_Data)
             Video6_Aggreating_Data.Video6_Aggreating_Data_Start();
+#endif
+
+#if (Video6_Aggregation_With_Extended_Method)
+            Video6_Aggregation_With_Extended_Method.Video6_Aggregation_With_Extended_Method_Start();
 #endif
             using (var unitOfWork = new UnitOfWork(new PlutoContext()))
             {

@@ -57,6 +57,7 @@
     <Compile Include="Core\Repositories\IMovieRepository.cs" />
     <Compile Include="Extensions\MyLinq.cs" />
     <Compile Include="Persistence\Repositories\MovieRepository.cs" />
+    <Compile Include="Statistics\CarStatistics.cs" />
     <Compile Include="Video3\NotUsingLinq.cs" />
     <Compile Include="Persistence\Repositories\AuthorRepository.cs" />
     <Compile Include="Core\Domain\Course.cs" />
@@ -102,6 +103,7 @@
     <Compile Include="Video5\Video5_Implementing_A_File_Processor.cs" />
     <Compile Include="Video5\Video5_Quantifying_Data_With_Any_All_Contains.cs" />
     <Compile Include="Video6\Video6_Aggreating_Data.cs" />
+    <Compile Include="Video6\Video6_Aggregation_With_Extended_Method.cs" />
     <Compile Include="Video6\Video6_Challenge_Answer_Group_By_Country.cs" />
     <Compile Include="Video6\Video6_Grouping_Data.cs" />
     <Compile Include="Video6\Video6_Creating_A_Join_With_A_Composition.cs" />
@@ -122,6 +124,7 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201510010029257_InitialMigration.resx">
       <DependentUpon>201510010029257_InitialMigration.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
